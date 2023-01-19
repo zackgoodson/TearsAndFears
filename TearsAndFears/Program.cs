@@ -13,12 +13,17 @@ namespace TearsAndFears
             int numRolls = Convert.ToInt32(Console.ReadLine());
             
 
+
             // Declare Array for roll total for numbers rolled
-            
-            int[] rollTotals = new int[11]; 
+            int[] rollTotals = new int[11];
+
+
+            Console.WriteLine(" \n \n DICE ROLLING SIMULATION RESULTS \n " +
+                    "       (Each '*' represents 1 % of the total number of rolls.) \n \n" +
+                    "Total number of rolls: \n");
 
             // Simulate dice roll
-            for(int i = 0; i < numRolls ; i++)
+            for (int i = 0; i < numRolls ; i++)
             {
                 //rolls dice
                 int roll1 = r.Next(1, 7);
